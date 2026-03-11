@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Vida - Cadastro</title>
+   <style>
+   
+    * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+        font-family: 'Segoe UI', sans-serif; 
+    }
+
+    body { 
+      
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        min-height: 100vh; 
+        
+     
+        background-color: #f0f2f5; 
+        background-image: url('image.png'); 
+        background-repeat: repeat;
+        background-attachment: fixed; 
+        background-size: 1000px; 
+    }
+
+   
+    .container { 
+        background: rgba(255, 255, 255, 0.95); 
+        padding: 40px; 
+        border-radius: 15px; 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+        width: 100%; 
+        max-width: 400px; 
+        text-align: center; 
+    }
+
+    
+    img { margin-bottom: 20px; border-radius: 50%; }
+    h2 { color: #333; margin-bottom: 20px; }
+    label { display: block; text-align: left; font-weight: 600; color: #666; margin: 10px 0 5px; }
+    
+    input { 
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ddd; 
+        border-radius: 8px; 
+        margin-bottom: 15px; 
+        outline: none;
+    }
+
+    button { 
+        width: 100%; 
+        padding: 12px; 
+        background: #2c7be5; 
+        color: white; 
+        border: none; 
+        border-radius: 8px; 
+        cursor: pointer; 
+        font-weight: bold; 
+        transition: 0.3s; 
+    }
+
+    button:hover { background: #1a5fc4; }
+
+    .btn-secondary { 
+        background: none; 
+        color: #2c7be5; 
+        border: 1px solid #2c7be5; 
+        margin-top: 10px; 
+    }
+
+    .btn-secondary:hover { background: #f0f7ff; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <img src="unnamed.webp" alt="Logo" width="100">
+        <h2>Criar Conta</h2>
+        <label>Nome:</label>
+        <input type="text" id="reg-nome" placeholder="Seu nome">
+        <label>Email:</label>
+        <input type="email" id="reg-email" placeholder="seu@email.com">
+        <label>Senha:</label>
+        <input type="password" id="reg-senha" placeholder="Digite uma senha">
+        <button onclick="window.location.href='loguin.html'">Cadastrar</button>
+
+</body>
+</html>
